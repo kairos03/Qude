@@ -47,7 +47,7 @@ Servo myMotor2;
 Servo myMotor3;
 Servo myMotor4;
 
-int dM1 = 0, dM2 = 0, dM3 =81, dM4 = 76;
+int dM1 = 76, dM2 = 83, dM3 =81, dM4 = 76;
 int M1 = 0, M2 = 0, M3 =0, M4 = 0;
 
 boolean isStop = false;
@@ -55,7 +55,7 @@ double X_err[3] = {0,0,0}, X_err_sum = 0;	// Err, accumulation err
 double X_angle_aim, X_angle;  			//aim angle, now state angle
 double X_kp_ctr, X_ki_ctr, X_kd_ctr;  	//P out, I out, D out
 double X_angle_a; 			//total X angle out
-double X_kp = 0.22,X_ki = 0,X_kd = 0.0006;  	//p gain, i gain, d gain
+double X_kp = 0.23,X_ki = 0,X_kd = 0.0005;  	//p gain, i gain, d gain
 
 void setup()
 { 
